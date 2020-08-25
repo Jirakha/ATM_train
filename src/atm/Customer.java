@@ -16,6 +16,17 @@ public class Customer {
         this.account = new BankAccount(id,name,"Checking");
 
     }
+ public boolean checkPin(String pin)
+ {
+     if (this.pin.equals(pin))
+     {
+         return true;
+
+     }else
+         return false;
+
+ }
+
 
     public int getId() {
         return id;
