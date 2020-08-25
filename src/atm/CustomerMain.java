@@ -8,7 +8,8 @@ public class CustomerMain {
         Customer peter = new Customer(1,"Peter","1234");
         Customer nancy = new Customer(2,"Nancy","6789");
 
-        Bank bank = new Bank("My name");
+        //Bank bank = new Bank("My name", new DatabaseDataSource());
+        Bank bank = new Bank("My name", new WebServicesDatasource());
         bank.addCustomer(peter);
         bank.addCustomer(nancy);
         System.out.println(bank);

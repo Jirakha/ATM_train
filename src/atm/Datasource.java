@@ -1,2 +1,9 @@
-package atm;public interface Datasource {
+package atm;
+
+import java.util.ArrayList;
+
+public interface Datasource {
+
+    ArrayList<Customer> getCustomerData();
+
 }
